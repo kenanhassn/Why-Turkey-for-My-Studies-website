@@ -1,0 +1,95 @@
+ body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: hsl(57, 84%, 77%);
+            color: #333;
+            line-height: 1.7;
+        }
+
+ header {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+ nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+
+ nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+ nav a:hover {
+            text-decoration: underline;
+        }
+
+ section {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+
+ h2 {
+         font-size: 30px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+ h3 {
+            margin-top: 25px;
+            font-size: 25px;
+            color: #1f2937;
+        }
+
+ footer {
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            padding: 20px;
+        }
+
+.hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/igor-sporynin-SagXn7H6HFg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2); /* غمّاشة خفيفة بنسبة 20% */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* إضافة ظل للنص */
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* يمكن إضافة نفس الظل إذا تريد تعزيز التأثير */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
